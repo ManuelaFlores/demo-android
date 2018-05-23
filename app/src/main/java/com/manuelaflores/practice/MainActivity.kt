@@ -1,5 +1,6 @@
 package com.manuelaflores.practice
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        btnManuela.setOnClickListener {
+            tvManuela.setText(getString(R.string.name))
+
+            startActivity(Intent(this,RegisterActivity::class.java))
+        }
     }
 
     override fun onStart() {
@@ -36,9 +42,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         Log.d("tag:Prueba" , "Es onResume")
-        btnManuela.setOnClickListener {
-            tvManuela.setText(getString(R.string.name))
-        }
+
     }
 
 
