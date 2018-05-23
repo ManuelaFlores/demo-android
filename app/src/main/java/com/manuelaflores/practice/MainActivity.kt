@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         Log.d("tag:Prueba" , "Es onResume")
         btnManuela.setOnClickListener {
-            tvManuela.setText("Manuela")
+            tvManuela.setText(getString(R.string.name))
         }
     }
 
