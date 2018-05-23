@@ -3,6 +3,7 @@ package com.manuelaflores.practice
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +36,9 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         Log.d("tag:Prueba" , "Es onResume")
+        btnManuela.setOnClickListener {
+            tvManuela.setText("Manuela")
+        }
     }
 
 
