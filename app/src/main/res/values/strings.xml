@@ -2,4 +2,5 @@
     <string name="app_name">practice</string>
     <string name="manuela">Manuela</string>
     <string name="name">Manuela</string>
+    <string name="title_activity_detail">DetailActivity</string>
 </resources>
